@@ -1,0 +1,311 @@
+/* QUALIDADES */
+section#qualidade > div {
+    width: max-content;
+    height: 290px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+section#qualidade > div > article {
+    height: 100%;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+section#qualidade > div > article > h1 {
+    font-size: 30px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+section#qualidade > div:first-child > article:first-child {
+    width: 700px;
+    margin-right: 20px;
+    background-image: url('../IMG/4.png');
+}
+
+section#qualidade > div:first-child > article:last-child {
+    width: 400px;
+    background-image: url('../IMG/7.png');
+}
+
+section#qualidade > div:last-child > article:first-child {
+    width: 400px;
+    margin-right: 20px;
+    background-image: url('../IMG/9.png');
+}
+
+section#qualidade > div:last-child > article:last-child {
+    width: 700px;
+    background-image: url('../IMG/6.png');
+}
+
+@media only screen and (max-width: 1150px) {
+    section#qualidade > div {
+        width: 700px;
+        height: 630px;
+        display: block;
+    }
+
+    section#qualidade > div > article {
+        height: 310px;
+        margin-bottom: 10px;
+    }
+
+    section#qualidade > div > article:last-child {
+        margin-bottom: 0;
+    } 
+
+    section#qualidade > div:first-child > article:first-child,
+    section#qualidade > div:first-child > article:last-child,
+    section#qualidade > div:last-child > article:first-child,
+    section#qualidade > div:last-child > article:last-child {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    section#qualidade > div {
+        width: 350px;
+        height: 420px;
+    }
+
+    section#qualidade > div > article {
+        height: 210px;
+    }
+}
+
+/* SOLUÇÕES */
+section#solucoes > div {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+section#solucoes > div > article {
+    width: 310px;
+    border-radius: 12px;
+    margin-right: 30px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.41);
+}
+
+section#solucoes > div > article:last-child {
+    margin: 0;
+}
+
+section#solucoes > div > article > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section#solucoes > div > article > div > img {
+    width: 130px;
+}
+
+section#solucoes > div > article > div > img[alt='valor'] {
+    width: 100px;
+    margin: 20px 0;
+}
+
+section#solucoes > div > article > div > h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section#solucoes > div > article > div > ul {
+    margin-left: 25px;
+}
+
+section#solucoes > div > article > div > h3, section#solucoes > div > article > div > ul > li{
+    font-size: 20px;
+}
+
+section#solucoes > div > article > div > ul > li {
+    text-align: left;
+}
+
+section#solucoes > div > article > div > ul > li::after {
+    content: ';'
+}
+
+section#solucoes > div > article > div > ul > li:last-child:after {
+    content: '.'
+}
+
+@media only screen and (max-width: 1150px) {
+    section#solucoes > div {
+        height: 250px;
+    }
+
+    section#solucoes > div > article {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    section#solucoes > div {
+        height: max-content;
+        display: block;
+    }
+
+    section#solucoes > div > article {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+
+/*section NUMEROS */
+section#numeros {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#numeros > div {
+    width: max-content;
+}
+
+section#numeros > div:first-child {
+    margin-right: 100px;
+}
+
+section#numeros > div > h1 {
+    font-size: 45px;
+    margin-bottom: 100px;
+}
+
+section#numeros > div > div {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#numeros > div > div > article {
+    width: 150px;
+    height: 100%;
+}
+
+section#numeros > div > div > article > h1 {
+    font-size: 60px;
+}
+
+section#numeros > div > img {
+    width: 500px;
+}
+
+@media only screen and (max-width:1150px) {
+    section#numeros {
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    section#numeros > div:last-child {
+        display: none;
+    }
+
+    section#numeros > div:first-child {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    section#numeros {
+        margin-top: 0px;
+    }
+
+    section#numeros > div:first-child {
+        height: max-content;
+    }
+
+    section#numeros > div > h1 {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    section#numeros > div > div {
+        display: block;
+        height: max-content;
+    }
+
+    section#numeros > div > div > article {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+/* CLIENTES */
+section#clientes > h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+section#clientes > div {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+section#clientes > div > article {
+    width: 320px;
+    height: calc(100% - 10px);
+    border-top: 10px solid var(--preto);
+    border-radius: 12px;
+    margin-right: 30px;
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.41);
+}
+
+section#clientes > div > article:last-child {
+    margin: 0;
+}
+
+section#clientes > div > article > div {
+    width: 280px;
+    margin: 30px auto;
+    height: max-content;
+}
+
+section#clientes > div > article > div > h3 {
+    font-size: 17px;
+}
+
+section#clientes > div > article > div > h1 {
+    font-size: 26px;
+}
+
+@media only screen and (max-width: 1050px) {
+    section#clientes > div {
+        display: block;
+        height: max-content;
+        margin: 0 auto;
+    }
+
+    section#clientes > div > article {
+        padding-bottom: 1px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    section#clientes > h1 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    section#clientes > h1 {
+        font-size: 23px;
+    }
+}

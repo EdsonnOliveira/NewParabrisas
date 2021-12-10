@@ -1,0 +1,40 @@
+input, select, button, textarea {
+    outline: 0;
+    resize: none;
+    border-radius: 6px;
+    border: 0;
+}
+
+.input {
+    border: 1px solid #CECECE;
+    -webkit-box-shadow: inset 0px 0px 14px -3px rgba(0,0,0,0.17);
+    -moz-box-shadow: inset 0px 0px 14px -3px rgba(0,0,0,0.17);
+    box-shadow: inset 0px 0px 14px -3px rgba(0,0,0,0.17);
+}
+
+.button {
+    cursor: pointer;
+}
+
+/* LARGURA */
+.input.ip100, .button.bt100 {
+    padding: 13px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+textarea.input.ip100 {
+    height: 150px;
+}
+
+/* PLACEHOLDER */
+.input.txtPreto::placeholder {
+    color: var(--preto);
+    font-weight: 500;
+}
+
+/* COR */
+.btPadrao {
+    background-color: var(--corPadrao);
+}
